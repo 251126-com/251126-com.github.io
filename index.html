@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snowluma · AstrBot Instance</title>
+<meta name="description" content="Snowluma — a self-hosted AstrBot instance with LLM conversation, plugins and long-term memory.">
+<style>
+  :root{
+    --bg:#0f1117; --card:#171a23; --line:#242938;
+    --txt:#e6e8ee; --dim:#9aa3b8; --accent:#f5a9c4; --accent2:#8ab4f8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.7; padding:0 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:64px 0 48px}
+  header{margin-bottom:48px}
+  h1{font-size:2.4rem;font-weight:700;letter-spacing:-.02em}
+  h1 span{color:var(--accent)}
+  .sub{color:var(--dim);margin-top:8px;font-size:1.05rem}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--card);border:1px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:.85rem;color:var(--dim);
+    margin-top:20px;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80}
+  section{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:26px 28px;margin-bottom:20px;
+  }
+  h2{font-size:1.05rem;font-weight:600;margin-bottom:14px;color:var(--accent2)}
+  p{color:var(--dim)}
+  ul{list-style:none;display:grid;gap:10px;margin-top:4px}
+  li{color:var(--dim);padding-left:20px;position:relative}
+  li::before{content:"";position:absolute;left:4px;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  footer{text-align:center;color:#5b6377;font-size:.85rem;margin-top:40px}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Snow<span>luma</span></h1>
+    <p class="sub">A self-hosted AstrBot instance</p>
+    <div class="badge"><span class="dot"></span> Running</div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Snowluma 是一个基于 <a href="https://astrbot.app" target="_blank" rel="noopener">AstrBot</a> 框架自托管的多平台聊天机器人。它把大语言模型、插件系统与长期记忆整合在一起，在不同平台上提供连贯的对话体验。</p>
+  </section>
+
+  <section>
+    <h2>Capabilities</h2>
+    <ul>
+      <li>多平台消息接入与统一会话管理</li>
+      <li>LLM 驱动的对话与可配置人格</li>
+      <li>插件系统与 MCP 工具集成</li>
+      <li>长期记忆存储与技能库</li>
+      <li>图片生成、网页抓取与代码执行等工具链</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Purpose</h2>
+    <p>本站作为 Snowluma 实例的公开落地页，用于展示这个自托管机器人的基本信息。域名解析指向机器人所在的自托管服务器。</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Snowluma · Built on AstrBot</p>
+  </footer>
+</div>
+</body>
+</html>
